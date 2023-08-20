@@ -26,7 +26,7 @@ class Student{
     }
 }
 
-public class Oops {
+public class TestOops {
     public static void main(String args[]){
         Pen pen1 = new Pen();
         pen1.color = "blue";
