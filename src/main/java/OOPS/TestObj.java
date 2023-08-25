@@ -23,6 +23,18 @@ public class TestObj {
         System.out.println(s1.equals(s2));
         System.out.println(s1.equals(s3));
 
+        e1.salary = 1000;
 
+       // User user = new User();
+
+        //equal and override method
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
+
+        // overloading
+
+        System.out.println(e1.getIncome());
+        System.out.println(e1.getIncome(100,100));
+        System.out.println(e1.getIncome(500));
     }
 }

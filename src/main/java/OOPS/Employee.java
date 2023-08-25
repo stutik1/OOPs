@@ -10,4 +10,17 @@ public class Employee extends User{
         return "Paypal";
     }
 
+    public int getIncome(){
+        return salary;
+    }
+
+    public int getIncome(int agriculture ,int bonus){
+        int income = salary + agriculture + bonus;
+        return income;
+    }
+
+    public int getIncome(int stock){
+        int income = salary+stock;
+        return income;
+    }
 }
