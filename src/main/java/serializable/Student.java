@@ -20,10 +20,10 @@ public class Student implements Serializable {
                 '}';
     }
 
-    public Student(int id, String name, String city, String phoneNumber) {
+    public Student(int id) {
         this.id = id;
         this.name = name;
-        this.homeAddress= new Address(city);
+       // this.homeAddress= new Address(city);
         this.phoneNumber = phoneNumber;
         System.out.println("Constructor "+this);
     }
@@ -42,7 +42,7 @@ public class Student implements Serializable {
             //Creating stream and writing the object
             FileOutputStream file = new FileOutputStream("/Users/megha/Documents/ser.csv");
             ObjectOutputStream obj = new ObjectOutputStream(file);
-            obj.writeObject(new Student(1, "Megha","Bhagalpur","9521343704"));
+            obj.writeObject(new Student(1));
             obj.flush();
             //closing the stream
             obj.close();
